@@ -10,27 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_14_222540) do
+ActiveRecord::Schema.define(version: 2022_09_15_104538) do
 
-    create_table "events", force: :cascade do |t|
-      t.integer "venue_id"
-      t.integer "user_id"
-      t.date "date"
-      t.string "event_type"
-      t.integer "attendees"
-      t.integer "price"
-    end
-  
-    create_table "users", force: :cascade do |t|
-      t.string "username"
-      t.string "password"
-    end
-  
-    create_table "venues", force: :cascade do |t|
-      t.string "venue_name"
-      t.string "address"
-      t.string "phone"
-      t.integer "capacity"
-    end
-  
+  create_table "events", force: :cascade do |t|
+    t.integer "venue_id"
+    t.integer "user_id"
+    t.date "date"
+    t.string "event_type"
+    t.integer "attendees"
+    t.integer "price"
   end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+  end
+
+  create_table "venues", force: :cascade do |t|
+    t.string "venue_name"
+    t.string "address"
+    t.string "phone"
+    t.integer "capacity"
+  end
+
+end
