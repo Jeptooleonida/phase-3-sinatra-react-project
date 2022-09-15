@@ -72,5 +72,4 @@ class ApplicationController < Sinatra::Base
     user = User.busy_beaver
     user.to_json
   end
-
 end
